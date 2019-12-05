@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".InventarioActivity">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical">
+            <LinearLayout
+                    android:layout_width="408dp"
+                    android:layout_height="504dp"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+            >
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:id="@+id/textView_codigo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CODIGO: "
+                            tools:layout_editor_absoluteX="-50dp"
+                            tools:layout_editor_absoluteY="293dp"/>
+
+                    <EditText
+                            android:id="@+id/editText_codigo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:hint="95921591"
+                            android:text="95921591"
+                            tools:layout_editor_absoluteX="34dp"
+                            tools:layout_editor_absoluteY="279dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:id="@+id/textView_denominacion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DENOMINACION: "
+                            tools:layout_editor_absoluteX="-50dp"
+                            tools:layout_editor_absoluteY="293dp"/>
+
+                    <EditText
+                            android:id="@+id/editText_denominacion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:hint="ANTENA DIRECCIONAL"
+                            android:text="ANTENA DIRECCIONAL"
+                            tools:layout_editor_absoluteX="34dp"
+                            tools:layout_editor_absoluteY="279dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:id="@+id/textView_marca"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MARCA: "
+                            tools:layout_editor_absoluteX="-50dp"
+                            tools:layout_editor_absoluteY="293dp"/>
+
+                    <EditText
+                            android:id="@+id/editText_marca"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="TPLINK"
+                            tools:layout_editor_absoluteX="34dp"
+                            tools:layout_editor_absoluteY="279dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:id="@+id/textView_modelo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MODELO: "
+                            tools:layout_editor_absoluteX="-50dp"
+                            tools:layout_editor_absoluteY="293dp"/>
+
+                    <EditText
+                            android:id="@+id/editText_modelo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="TL-ANT2414A"
+                            tools:layout_editor_absoluteX="34dp"
+                            tools:layout_editor_absoluteY="279dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:id="@+id/textView_tipo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TIPO: "
+                            tools:layout_editor_absoluteX="-50dp"
+                            tools:layout_editor_absoluteY="293dp"/>
+
+                    <EditText
+                            android:id="@+id/editText_tipo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="SIN TIPO"
+                            tools:layout_editor_absoluteX="34dp"
+                            tools:layout_editor_absoluteY="279dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:id="@+id/textView_color"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="COLOR: "
+                            tools:layout_editor_absoluteX="-50dp"
+                            tools:layout_editor_absoluteY="293dp"/>
+
+                    <EditText
+                            android:id="@+id/editText_color"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="CREMA"
+                            tools:layout_editor_absoluteX="34dp"
+                            tools:layout_editor_absoluteY="279dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:id="@+id/textView_serie"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SERIE: "
+                            tools:layout_editor_absoluteX="-50dp"
+                            tools:layout_editor_absoluteY="293dp"/>
+
+                    <EditText
+                            android:id="@+id/editText_serie"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="SIN SERIE"
+                            tools:layout_editor_absoluteX="34dp"
+                            tools:layout_editor_absoluteY="279dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:id="@+id/textView_e"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="E: "
+                            tools:layout_editor_absoluteX="-50dp"
+                            tools:layout_editor_absoluteY="293dp"/>
+
+                    <EditText
+                            android:id="@+id/editText_e"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="B"
+                            tools:layout_editor_absoluteX="34dp"
+                            tools:layout_editor_absoluteY="279dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:id="@+id/textView_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ID: "
+                            tools:layout_editor_absoluteX="-50dp"
+                            tools:layout_editor_absoluteY="293dp"/>
+
+                    <EditText
+                            android:id="@+id/editText_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="192441"
+                            tools:layout_editor_absoluteX="34dp"
+                            tools:layout_editor_absoluteY="279dp"/>
+                </LinearLayout>
+
+                <Button
+                        android:id="@+id/button_add"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ADD INFO"
+                        android:onClick="send"/>
+
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="410dp"
+                    android:layout_height="193dp"
+                    android:layout_marginBottom="8dp"
+                    android:id="@+id/linearLayout4">
+                <Button
+                        android:text="Tomar Foto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="openCamera"
+                        android:id="@+id/button_tomarfoto"/>
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/editText_fotopath"/>
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="233dp"
+                        android:id="@+id/imageView_foto"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

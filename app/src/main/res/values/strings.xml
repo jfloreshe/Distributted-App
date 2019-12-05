@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">consumeWebService</string>
+    <string name="title_activity_inventario">InventarioActivity</string>
 </resources>

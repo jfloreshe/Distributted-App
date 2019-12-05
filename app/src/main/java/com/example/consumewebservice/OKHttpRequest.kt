@@ -9,10 +9,6 @@ import java.io.IOException
 import java.nio.charset.Charset
 import android.app.PendingIntent.getActivity
 
-/**
- * Created by Rohan Jahagirdar on 07-02-2018.
- */
-
 
 import java.util.HashMap
 
