@@ -13,7 +13,7 @@ import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-const val globalServer = "http://192.168.43.163:8000"
+const val globalServer = "http://192.168.1.61:8000"
 class ImageRest{
     fun uploadFoto(filepath: String) {
 
