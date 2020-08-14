@@ -61,8 +61,8 @@ Ejecutaremos lo anterior para el nodo 1
 Ahora que sabemos como ejecutar un script desde terminal.
 Realizamos la ejecución de los scripts en el siguiente orden
 
-#### 1. Ejecutar en cada nodo el script `nodo\<numero de nodo actual\>.sql` para la base de datos `restaurantenodo\<numero de nodo\>`
-#### 2. Ejecutar en cada nodo el script `nodoreplica\<numero de nodo replica\>.sql` para la base de datos `restaurantenodo\<numero de nodo replica\>`
+#### 1. Ejecutar en cada nodo el script `nodo<numero de nodo actual>.sql` para la base de datos `restaurantenodo<numero de nodo>`
+#### 2. Ejecutar en cada nodo el script `nodoreplica<numero de nodo replica>.sql` para la base de datos `restaurantenodo<numero de nodo replica>`
 #### 3. Ejecutar en cada nodo el script `restaurantScript.sql` para la base de datos `restaurante`
 #### 4. Ejecutar en cada nodo el script `masterForeignTables.sql` para la base de datos `restaurante`
 #### 5. Ejecutar en cada nodo el script `trigger.sql` para la base de datos `restaurante`
