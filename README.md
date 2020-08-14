@@ -30,7 +30,7 @@ Este comando nos permite ingresar al nodo que deamos, al puerto donde se esta ej
 Recordando la primera imágen ingresaremos al primer nodo con los datos proporcionados.
 ![alt text](https://bdconf3.png)
 Una vez dentro creamos las bases de datos.
-#### create database restaurantenodo\<numero de nodo\>;
+#### create database restaurantenodo\<numero de nodo actual\>;
 #### create database restaurantenodo\<replica del nodo\>;
 #### create database restaurante;
 Una vez hecho esto nos aseguramos que hemos creado correctamente las bases de datos colocando
@@ -45,28 +45,29 @@ Como se muestra en la figura primero hemos ingresado al nodo 3 usando
 Una vez dentro hemos creado las tablas y usando `list` vemos que tenemos la base de datos `restaurantenodo3` que es donde guardaremos todos los datos del nodo 3, `restaurantenodo2` que es donde se guardará la réplica del nodo 2 y restaurante.
 Entonces siguiendo esta lógica hacemos lo mismo para el nodo 2 y 4 siguiendo el concepto de la siguiente imágen.
 ![alt text](https://bdconf6.png)
+```
 En el nodo 1 se crea restaurantenodo1, restaurantenodo4 y restaurante.
 En el nodo 2 se crea restaurantenodo2, restaurantenodo1 y restaurante.
 En el nodo 3 se crea restaurantenodo3, restaurantenodo2 y restaurante.
 En el nodo 4 se crea restaurantenodo4, restaurantenodo3 y restaurante.
-
+```
 Ahora ejecutamos los scripts correspondientes para crear la fragmentación, replicación y todo le mencionado en la propuesta.
 Para realizar una ejecución de script salimos por completo de postgres y volvemos a ingresar usando
 #### sudo su - postgres
 Una vez dentro ejecutamos el siguiente comando
-#### psql -h \<ip nodo que deseamos acceder\> \[-p \<puerto del nodo\>\] -U \<usuario\> -d \<nombre de la base de datos\> -f \<el camino completo al archivo\>
+#### psql -h \<ip nodo que deseamos acceder\> \[-p \<puerto del nodo\>\] -U \<usuario\> -d \<nombre de la base de datos\> -a -f \<el camino completo al archivo\>
 Ejecutaremos lo anterior para el nodo 1
 ![alt text](https://bdconf7.png)
 Ahora que sabemos como ejecutar un script desde terminal.
 Realizamos la ejecución de los scripts en el siguiente orden
 
-#### 1. Ejecutar en cada nodo el script nodo\<numero de nodo\>.sql para la base de datos restaurantenodo\<numero de nodo\>
-#### 2. Ejecutar en cada nodo el script nodoreplica\<numero de nodo\>.sql para la base de datos restaurantenodo\<numero de nodo replica\>
-#### 3. Ejecutar en cada nodo el script restaurantScript.sql para la base de datos restaurante
-#### 4. Ejecutar en cada nodo el script masterForeignTables.sql para la base de datos restaurante
-#### 5. Ejecutar en cada nodo el script trigger.sql para la base de datos restaurante
-#### 6. Ejecutar en cada nodo el script CreateFunctions.sql para la base de datos restaurante
-#### 7. Ejecutar en un solo nodo el script DatosIniciales.sql para la base de datos restaurante
+#### 1. Ejecutar en cada nodo el script `nodo\<numero de nodo actual\>.sql` para la base de datos `restaurantenodo\<numero de nodo\>`
+#### 2. Ejecutar en cada nodo el script `nodoreplica\<numero de nodo replica\>.sql` para la base de datos `restaurantenodo\<numero de nodo replica\>`
+#### 3. Ejecutar en cada nodo el script `restaurantScript.sql` para la base de datos `restaurante`
+#### 4. Ejecutar en cada nodo el script `masterForeignTables.sql` para la base de datos `restaurante`
+#### 5. Ejecutar en cada nodo el script `trigger.sql` para la base de datos `restaurante`
+#### 6. Ejecutar en cada nodo el script `CreateFunctions.sql` para la base de datos `restaurante`
+#### 7. Ejecutar en un solo nodo el script `DatosIniciales.sql` para la base de datos `restaurante`
 Con esto ya tendremos la base de datos funcional y lista para ser llamada desde nuestra interfaz de usuario.
 
 ## Frontend y Backend
