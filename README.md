@@ -1,4 +1,5 @@
 # Restaurante "El Ganso"
+## Introducci\'on
 ## Base de Datos Distribuida
 
 
