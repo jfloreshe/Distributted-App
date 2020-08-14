@@ -1,6 +1,12 @@
 # Restaurante "El Ganso"
-## Introducci\'on
+áéíóú
+## Introducción
+El presente texto muestra la instalación en el sistema operativo Linux Ubuntu.
 ## Base de Datos Distribuida
+### Software requerido
+#### PostgreSQL v10 o superior
+Luego de configurar la red e instalar postgreSQL necesitamos configurar cada nodo para esto es recomendable tener la información de cada uno.
+![alt text](https://drive.google.com/file/d/1OnP6tIFvu1RgCsNT4f0qZiBNhGGfmKO6/view?usp=sharing)
 
 
 ## Frontend y Backend
