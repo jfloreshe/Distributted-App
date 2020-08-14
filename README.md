@@ -84,7 +84,7 @@ Realizamos la ejecución de los scripts en el siguiente orden
 #### 5. Ejecutar en cada nodo el script `trigger.sql` para la base de datos `restaurante`
 #### 6. Ejecutar en cada nodo el script `CreateFunctions.sql` para la base de datos `restaurante`
 #### 7. Ejecutar en un solo nodo el script `DatosIniciales.sql` para la base de datos `restaurante`
-Con esto ya tendremos la base de datos funcional y lista para ser llamada desde nuestra interfaz de usuario.
+Con esto ya tendremos la base de datos funcional y lista para ser llamada desde nuestro backend
 
 ## Frontend y Backend
 La parte del frontend se encuentra dentro de la carpeta client y el backend se encuentra dentro de la carpeta api
