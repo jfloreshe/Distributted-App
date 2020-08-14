@@ -25,11 +25,9 @@ Para esto primero debemos crear 3 bases de datos en cada nodo.
 Accedemos a postgres
 #### sudo su - postgres
 luego de ingresar el password correcto ingresamos el siguiente comando
-#### psql -h <ip nodo que deseamos acceder> [-p <puerto del nodo>] -U <usuario>
+#### psql -h \<ip nodo que deseamos acceder\> \[-p \<puerto del nodo\>\] -U \<usuario\>
 
 
-Con esto podemos acceder desde cualquier nodo a otro nodo.
-Ahora ingresamos al siguiente archivo con el siguiente comando.
 #### sudo vim /etc/postgresql/12/main/postgresql.conf
 
 ## Frontend y Backend
